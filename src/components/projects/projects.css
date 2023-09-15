@@ -1,0 +1,135 @@
+.projects-container {
+    background: radial-gradient(#1577a5 0%, #112 80%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects {
+    color: white;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+    max-height: 100%;
+}
+
+.project {
+    margin: 1rem 0;
+    padding: 2rem 0;
+    border: rgb(31, 27, 27) solid 1px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    transition: transform .5s, background .5s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.project:hover {
+    transform: scale(1.03);
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.project h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 40px;
+}
+
+.project-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.project-image {
+    padding: 1rem;
+    max-height: 100px;
+    max-width: 100%;
+}
+
+.project-content {
+    padding: 1rem 2rem;
+    flex: 1;
+}
+
+.project-content p {
+    text-align: justify;
+    line-height: calc(1.7rem + 0.2vmin);
+    margin-bottom: 1rem;
+    font-size: calc(20px + 0.2vmin);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    min-width: 75%;
+}
+
+.button-container button {
+    padding: .75rem;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button-container button:hover {
+    background: radial-gradient(#F49867 0%, #AE67FA 100%);
+}
+
+.project a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.coming-soon {
+    background-color: #000000bb;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    border-radius: 10px;
+}
+
+.coming-soon-content {
+    color: red;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coming-soon-content p {
+    font-size: calc(28px + 1.5vmin);
+    transform: rotate(-30deg);
+}
+
+@media screen and (max-width: 1400px) {
+    .projects {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 100px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .projects {
+        grid-template-columns: 1fr;
+        padding: 0 25px;
+    }
+
+    .project {
+        margin: 2rem 0 0;
+    }
+
+    .projects:last-child {
+        padding-bottom: 2rem;
+    }
+}

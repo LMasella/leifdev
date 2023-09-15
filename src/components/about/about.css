@@ -1,0 +1,92 @@
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffb393;
+    color: black;
+}
+
+.about {
+    display: flex;
+    align-items: flex-start;
+}
+
+.about div {
+    padding: 0 1em;
+    flex: 1;
+}
+
+#about h1 {
+    font-size: calc(50px + 4vmin);
+}
+
+#about p {
+    font-size: calc(16px + 2vmin);
+}
+
+#skills h2 {
+    font-size: calc(20px + 2vmin);
+}
+
+#skills ul {
+    list-style-position: inside;
+    font-size: calc(12px + 1.5vmin);
+    margin-left: 1rem;
+}
+
+.about-name {
+    background: linear-gradient(90deg, #9A52E5 0%, #CD7DBB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.lists {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+
+.about a {
+    background: linear-gradient(89.97deg, #d77f1b 0%, #4e049e 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+
+@media screen and (max-width: 1250px) {
+    .lists {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    #about h1 {
+        margin: 2rem 0 1rem;
+    }
+
+    #skills h2 {
+        margin: 2rem 0 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about {
+        flex-direction: column;
+    }
+
+    #about h1 {
+        margin: 4rem 0 1rem;
+        line-height: 80px;
+    }
+
+    #skills h2 {
+        margin: 4rem 0 1rem;
+    }
+
+    #skills {
+        margin-bottom: 1rem;
+    }
+    
+}

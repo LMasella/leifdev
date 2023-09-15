@@ -1,0 +1,40 @@
+nav div {
+    padding: 1.5em 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2em;
+}
+
+nav p {
+    font-size: calc(10px + 1.5vmin);
+    cursor: pointer;
+    user-select: none;
+    transition: transform .75s;
+}
+
+.nav-icon a {
+    font-size: calc(9px + 1vmin);
+}
+
+.nav-menu p:hover {
+    transform: scale(1.08);
+}
+
+.nav-icon {
+    display: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media screen and (max-width: 620px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-icon {
+        display: flex;
+    }
+}
